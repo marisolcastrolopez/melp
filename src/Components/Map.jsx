@@ -1,23 +1,10 @@
- import React from 'react';
- import MapContainer from './Components/Map';
-
-function App() {
- return (
-   <div className="App">
-     <MapContainer></MapContainer>
-   </div>
- );
-} 
-
-export default App;
-
-/* 
- import React, { Component } from 'react';
+import React, { Component } from 'react';
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
 const mapStyles = {
  width: '50%',
  height: '50%'
 };
+
 export class MapContainer extends Component {
   state = {
     showingInfoWindow: false,  //Hides or the shows the infoWindow
@@ -68,4 +55,4 @@ export class MapContainer extends Component {
     
 export default GoogleApiWrapper({
  apiKey: 'AIzaSyBrKMm2g8gMfsU_JtKF6fkgdtw1ED3ShgU'
-})(MapContainer);  */
+})(MapContainer);
