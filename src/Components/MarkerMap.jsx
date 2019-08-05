@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from "google-maps-react";
 import CurrentLocation from "./CurrentLocationMap";
-
+import data from "../Data/data.json";
 const mapStyles = {
-  width: "50%",
-  height: "50%"
+  width: "100%",
+  height: "100%"
 };
 
 export class MapContainer extends Component {
@@ -30,23 +30,24 @@ export class MapContainer extends Component {
   };
 
   render() {
+    console.log(data);
+
+    const marker = data.restaurants.map((i, index) => {
+      return (
+        <Marker
+          onClick={this.onMarkerClick}
+          name={i.name}
+          position={{ lat: i.north, lng: i.west }}
+          key={i.id}
+          
+        />
+      )
+    });
+    console.log(marker)
+  
     return (
-      <CurrentLocation centerAroundCurrentLocation google={this.props.google}>
-        <Marker
-          onClick={this.onMarkerClick}
-          name={"Tacos Doña María"}
-          position={{ lat: 20.6736, lng: -103.344 }}
-        />
-        <Marker
-          onClick={this.onMarkerClick}
-          name={"Tortas"}
-          position={{ lat: 20.6436, lng: -103.324 }}
-        />
-        <Marker
-          onClick={this.onMarkerClick}
-          name={"Tamales"}
-          position={{ lat: 20.6436, lng: -103.329 }}
-        />
+      <CurrentLocation centerAroundCurrentLocation google={this.props.google}> 
+        {marker}
         <InfoWindow
           marker={this.state.activeMarker}
           visible={this.state.showingInfoWindow}
