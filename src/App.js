@@ -1,3 +1,4 @@
+
  import React from 'react';
  import Main from './components/Main';
  import Router from './Router'
@@ -11,5 +12,4 @@ function App() {
    </div>
  );
 } 
-
 export default App;
