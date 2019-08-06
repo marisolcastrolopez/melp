@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import MarkerMap from "./MarkerMap";
-import Card from './Card'
+import Cards from './Cards'
 
 class Main extends Component {
   constructor(props) {
@@ -22,7 +22,7 @@ class Main extends Component {
         view = <MarkerMap></MarkerMap>
     }
     else{
-        view = <Card></Card>
+        view = <Cards></Cards>
     }
     return (
       <div>
