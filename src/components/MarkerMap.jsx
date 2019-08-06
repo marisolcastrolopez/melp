@@ -10,13 +10,10 @@ const mapStyles = {
 export class MapContainer extends Component {
   constructor(props){
     super(props);
-    {
       this.state = {
         showingInfoWindow: false, //Hides or the shows the infoWindow
         activeMarker: {}, //Shows the active marker upon click
         selectedPlace: {} //Shows the infoWindow to the selected place upon a marker
-        
-      };
     }
   }
   
@@ -39,17 +36,17 @@ export class MapContainer extends Component {
   render() {
     
     const data = (Array.isArray(this.props.data))? this.props.data : this.props.data.restaurants;
-    const marker = data.map(i => {
+    const marker = data.map((i, index) => {
       return (
         <Marker
-          onClick={this.onMarkerClick}
-          name={i.name}
-          position={{ lat: i.north, lng: i.west }}
-          key={i.id}
-          info= {i.description}
-          category = {i.category}
-          price = { i.price}
-        />
+        onClick={this.onMarkerClick}
+        name={i.name}
+        position={{ lat: i.address.location.lat, lng: i.address.location.lng }}
+        key={index}
+        info= {i.shortDescription}
+        category = {i.category}
+        price = { i.avgPrice}
+      />
       )
     });
 
