@@ -1,0 +1,13 @@
+img {
+    object-fit: cover;
+    width: 50%;
+    height: 50%;
+}
+
+h6 {
+    font-size: 80%;
+}
+
+p {
+    font-size: 70%;
+}
