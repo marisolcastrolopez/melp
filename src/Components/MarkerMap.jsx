@@ -1,18 +1,25 @@
 import React, { Component } from "react";
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from "google-maps-react";
 import CurrentLocation from "./CurrentLocationMap";
-import data from "../data/data.json"; 
+ 
 const mapStyles = {
   width: "100%",
   height: "100%"
 };
 
 export class MapContainer extends Component {
-  state = {
-    showingInfoWindow: false, //Hides or the shows the infoWindow
-    activeMarker: {}, //Shows the active marker upon click
-    selectedPlace: {} //Shows the infoWindow to the selected place upon a marker
-  };
+  constructor(props){
+    super(props);
+    {
+      this.state = {
+        showingInfoWindow: false, //Hides or the shows the infoWindow
+        activeMarker: {}, //Shows the active marker upon click
+        selectedPlace: {} //Shows the infoWindow to the selected place upon a marker
+        
+      };
+    }
+  }
+  
 
   onMarkerClick = (props, marker, e) =>
     this.setState({
@@ -30,7 +37,9 @@ export class MapContainer extends Component {
   };
 
   render() {
-    const marker = data.restaurants.map((i, index) => {
+    
+    const data = (Array.isArray(this.props.data))? this.props.data : this.props.data.restaurants;
+    const marker = data.map(i => {
       return (
         <Marker
           onClick={this.onMarkerClick}

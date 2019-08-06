@@ -2,31 +2,45 @@ import React, { Component } from "react";
 import MarkerMap from "./MarkerMap";
 import Cards from './Cards';
 import Search from './Search';
+import data from "../data/data.json";
+
 class Main extends Component {
  constructor(props) {
    super(props);
-   this.switchFunction = this.switchFunction.bind(this);
+   this.switchToCards = this.switchToCards.bind(this);
+   this.switchToMap = this.switchToMap.bind(this);
    this.state = {
-     isMap: false
+     isMap: false,
+    data: data
    };
  }
- switchFunction = () => {
-   this.setState({ isMap:  !this.state.isMap});
+ switchToMap = () => {
+   this.setState({ isMap:  true});
  };
+
+ switchToCards = () => {
+  this.setState({ isMap:  false});
+};
+
+handlerSearch = (found) =>{
+  this.setState({ data:  (found.length)? found : data});
+}
+
  render() {
+ console.log(this.state.data)
    const isMap = this.state.isMap;
    let view;
    if (isMap){
-       view = <MarkerMap></MarkerMap>
+       view = <MarkerMap data={this.state.data}></MarkerMap>
    }
    else{
-       view = <Cards></Cards>
+       view = <Cards data={this.state.data}></Cards>
    }
    return (
      <div>
-       <header><Search></Search></header>
-       <button onClick = {this.switchFunction}>Cards </button>
-       <button onClick={this.switchFunction} >Map</button>
+       <header><Search eventSearch={this.handlerSearch} ></Search></header>
+       <button onClick = {this.switchToCards}>Cards </button>
+       <button onClick={this.switchToMap} >Map</button>
        <section>{view}</section>
        <footer>Footer</footer>
      </div>

@@ -5,16 +5,15 @@ import { MDBContainer, MDBRow, MDBCol } from 'mdbreact';
 // import './index.css';
 
 class Cards extends Component {
-  state = {
-    data
-  };
+  
 
   render() {
-    const { data } = this.state;
+    console.log(this.props.data);
+    const data = (Array.isArray(this.props.data))? this.props.data : this.props.data.restaurants;
     return (
       <div>
         <MDBContainer>
-          {data.restaurants.map((item, index) => (
+          {data.map((item, index) => (
             <div key={index}>
               <MDBRow>
                 <MDBCol size="4" xs="4">
