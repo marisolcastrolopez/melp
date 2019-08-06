@@ -1,13 +1,10 @@
 import React from 'react';
-//  import MapContainer from './components/MarkerMap';
-import Cards from './components/Cards';
+import MapContainer from './components/MarkerMap';
 
 function App() {
   return (
     <div className="App">
-      <Cards />
-      {/* <MapContainer /> */}
-      Hola Mundo
+      <MapContainer />
     </div>
   );
 }
