@@ -29,8 +29,9 @@ const Login = () => {
             </div>
             <div className="text-center">
               <MDBBtn>
-                <Link style={{ textDecoration: "none", color: "white" }} to="/map">About</Link>
+                
               </MDBBtn>
+              <Link style={{ textDecoration: "none", color: "white" }} to="/app">About</Link>
             </div>
           </form>
         </MDBCol>
