@@ -23,9 +23,10 @@ class Cards extends Component {
                 <MDBCol size="6" xs="6">
                   <h6>{item.name}</h6>
                   <p>{item.shortDescription}</p>
+                  <p>{item.address.street}</p>
                 </MDBCol>
                 <MDBCol size="2" xs="2">
-                  <span>{item.rating}</span> <br />
+                  <span><i style={{display: "block", fontSize: 10}} class="fas fa-star"></i> {item.rating}</span> <br />
                   <span>${item.avgPrice}</span>
                 </MDBCol>
               </MDBRow>

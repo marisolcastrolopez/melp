@@ -5,7 +5,9 @@ img {
 }
 
 h6 {
-    font-size: 80%;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #464646;
 }
 
 p {
@@ -21,5 +23,5 @@ p {
     margin-right: 1px;
     margin-top: 10px;
     margin-bottom: 10px;
-    height: 20vh;
+    height: 25vh;
 }

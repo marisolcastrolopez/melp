@@ -129,30 +129,10 @@ class Main extends Component {
                         <MDBNavLink to="#">Home</MDBNavLink>
                       </MDBNavItem>
                       <MDBNavItem>
-                        <MDBNavLink to="#">Features</MDBNavLink>
+                        <MDBNavLink to="#">Saved</MDBNavLink>
                       </MDBNavItem>
                       <MDBNavItem>
-                        <MDBNavLink to="#">Pricing</MDBNavLink>
-                      </MDBNavItem>
-                      <MDBNavItem>
-                        <MDBNavLink to="#">Options</MDBNavLink>
-                      </MDBNavItem>
-                    </MDBNavbarNav>
-                    <MDBNavbarNav right>
-                      <MDBNavItem>
-                        <MDBNavLink to="#">
-                          <MDBIcon fab icon="facebook-f" />
-                        </MDBNavLink>
-                      </MDBNavItem>
-                      <MDBNavItem>
-                        <MDBNavLink to="#">
-                          <MDBIcon fab icon="twitter" />
-                        </MDBNavLink>
-                      </MDBNavItem>
-                      <MDBNavItem>
-                        <MDBNavLink to="#">
-                          <MDBIcon fab icon="instagram" />
-                        </MDBNavLink>
+                        <MDBNavLink to="#">Add</MDBNavLink>
                       </MDBNavItem>
                     </MDBNavbarNav>
                   </MDBCollapse>
@@ -162,8 +142,8 @@ class Main extends Component {
           </div>
         </header>
         <div style={{ paddingTop: 80 }}>
-          <button onClick={this.switchToCards}>Cards </button>
-          <button onClick={this.switchToMap}>Map</button>
+          <button className="btnswitch" onClick={this.switchToCards}>Cards </button>
+          <button className="btnswitch" onClick={this.switchToMap}>Map</button>
         </div>
         <section>{view}</section>
         <footer>
