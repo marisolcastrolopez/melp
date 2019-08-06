@@ -1,12 +1,15 @@
-import React from 'react';
-import MapContainer from './components/MarkerMap';
+
+ import React from 'react';
+ import Main from './components/Main';
+ import Router from './Router'
 
 function App() {
-  return (
-    <div className="App">
-      <MapContainer />
-    </div>
-  );
-}
-
+ return (
+   <div className="App">
+     
+       <Router></Router>
+     
+   </div>
+ );
+} 
 export default App;
