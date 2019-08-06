@@ -1,10 +1,13 @@
  import React from 'react';
- import MapContainer from './components/MarkerMap';
+ import Main from './components/Main';
+ import Router from './Router'
 
 function App() {
  return (
    <div className="App">
-     <Main></Main>
+     
+       <Router></Router>
+     
    </div>
  );
 } 
