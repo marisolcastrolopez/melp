@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from "google-maps-react";
 import CurrentLocation from "./CurrentLocationMap";
-import data from "../data/data.json";
+import data from "../data/data.json"; 
 const mapStyles = {
   width: "100%",
   height: "100%"
@@ -30,8 +30,6 @@ export class MapContainer extends Component {
   };
 
   render() {
-    console.log(data);
-
     const marker = data.restaurants.map((i, index) => {
       return (
         <Marker
@@ -39,12 +37,13 @@ export class MapContainer extends Component {
           name={i.name}
           position={{ lat: i.north, lng: i.west }}
           key={i.id}
-          
+          info= {i.description}
+          category = {i.category}
+          price = { i.price}
         />
       )
     });
-    console.log(marker)
-  
+
     return (
       <CurrentLocation centerAroundCurrentLocation google={this.props.google}> 
         {marker}
@@ -55,7 +54,10 @@ export class MapContainer extends Component {
         >
           <div>
             <h4>{this.state.selectedPlace.name}</h4>
-          </div>
+            <p>{this.state.selectedPlace.info}</p>
+            <p>{this.state.selectedPlace.category}</p>
+            <p>${this.state.selectedPlace.price}</p>
+          </div> 
         </InfoWindow>
       </CurrentLocation>
     );

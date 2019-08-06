@@ -8,7 +8,7 @@
             "price": 280,
             "open": 8,
             "close": 13,
-            "category": "cafetería",
+            "category": "Cafetería",
             "description": "Lugar para pasar el rato con los amigos",
             "north": 20.6730555556,
             "west": -110.379722222
@@ -22,7 +22,7 @@
             "price": 150,
             "open": 12,
             "close": 24,
-            "category": "mariscos",
+            "category": "Mariscos",
             "description": "Un espacio moderno y colorido con mesas al aire libre que ofrece antojitos mexicanos, pizzas y ensaladas.",
             "north": 20.680878,
             "west": -103.390879
@@ -36,7 +36,7 @@
             "price": 210,
             "open": 8,
             "close": 14,
-            "category": "waffles",
+            "category": "Waffles",
             "description": "Sereno restaurante con terraza decorada con motivos vintage para probar desayunos, waffles y crepas.",
             "north": 20.681360,
             "west": -103.394965
@@ -50,7 +50,7 @@
             "price": 280,
             "open": 13,
             "close": 24,
-            "category": "mexicana",
+            "category": "Mexicana",
             "description": "Restaurante con renovado menú mexicano presentado en distintos salones y terrazas con estilo neorrústico.",
             "north": 20.680636,
             "west": -103.388613
@@ -64,7 +64,7 @@
             "price": 240,
             "open": 11,
             "close": 23,
-            "category": "mariscos",
+            "category": "Mariscos",
             "description": "Una experiencia de sabor y servicio.",
             "north": 20.670840,
             "west": -103.405093
@@ -78,8 +78,8 @@
             "price": 90,
             "open": 11,
             "close": 16,
-            "category": "pollos",
-            "description": "solo dinero en efectivo",
+            "category": "Pollos",
+            "description": "Solo dinero en efectivo",
             "north": 20.677906,
             "west": -103.390845
         },
@@ -92,8 +92,8 @@
             "price": 130,
             "open": 9,
             "close": 15,
-            "category": "hotdog",
-            "description": "comidas durante la madrugada",
+            "category": "Hotdog",
+            "description": "Comidas durante la madrugada",
             "north": 20.676862,
             "west": -103.388571
         },
@@ -106,7 +106,7 @@
             "price": 270,
             "open": 9,
             "close": 24,
-            "category": "mexicana",
+            "category": "Mexicana",
             "description": "Comedor familiar con amueblado tradicional mexicano ofrece platillos clásicos del país mañana, tarde y noche.",
             "north": 20.683929,
             "west": -103.387411
@@ -120,7 +120,7 @@
             "price": 350,
             "open": 13,
             "close": 24,
-            "category": "italiana",
+            "category": "Italiana",
             "description": "Grandes ventanales, detalles en madera y pisos de cemento dan un aire chic a este restaurant bar italiano.",
             "north": 20.682685,
             "west": -103.395823
@@ -134,7 +134,7 @@
             "price": 450,
             "open": 12,
             "close": 21,
-            "category": "mariscos",
+            "category": "Mariscos",
             "description": "Un restaurante informal con techo de palmas y terraza, con un extenso menú de mariscos en recetas originales.",
             "north": 20.680234,
             "west": -103.403399
@@ -148,7 +148,7 @@
             "price": 180,
             "open": 11,
             "close": 20,
-            "category": "mariscos",
+            "category": "Mariscos",
             "description": "Agradable, informal, recomendable para ir con niños",
             "north": 20.675247,
             "west": -103.390075
@@ -162,7 +162,7 @@
             "price": 175,
             "open": 7,
             "close": 24,
-            "category": "todo",
+            "category": "Todo",
             "description": "Amigable. Recomendable para ir con niños y grupos",
             "north": 20.674399,
             "west": -103.387677
@@ -176,7 +176,7 @@
             "price": 154,
             "open": 9,
             "close": 24,
-            "category": "mexicana",
+            "category": "Mexicana",
             "description": "Recomendable para ir con niños",
             "north": 20.669237,
             "west": -103.394453
@@ -190,8 +190,8 @@
             "price": 230,
             "open": 19,
             "close": 1,
-            "category": "cafetería",
-            "description": "comidas durante la madrugada. Agradable. Informal",
+            "category": "Cafetería",
+            "description": "Comidas durante la madrugada. Agradable. Informal",
             "north": 20.673173,
             "west": -103.392133
         },
@@ -204,7 +204,7 @@
             "price": 750,
             "open": 14,
             "close": 19,
-            "category": "bar",
+            "category": "Bar",
             "description": "Los viernes y sábados abren hasta la madrugada",
             "north": 20.672298,
             "west": -103.391834
@@ -218,7 +218,7 @@
             "price": 420,
             "open": 13,
             "close": 24,
-            "category": "italiana",
+            "category": "Italiana",
             "description": "Especialidades italianas y extensa carta de vinos en un mesón estilo toscano con columnas y vigas expuestas.",
             "north": 20.678563,
             "west": -103.385924
@@ -232,8 +232,8 @@
             "price": 350,
             "open": 13,
             "close": 22,
-            "category": "ramen",
-            "description": "agradable, informal, comida vegetariana",
+            "category": "Ramen",
+            "description": "Agradable, informal, comida vegetariana",
             "north": 20.676183,
             "west": -103.392994
         },
@@ -246,8 +246,8 @@
             "price": 260,
             "open": 12,
             "close": 22,
-            "category": "argentina",
-            "description": "agradable, informal",
+            "category": "Argentina",
+            "description": "Agradable, informal",
             "north": 20.681931,
             "west": -103.396467
         },
@@ -260,8 +260,8 @@
             "price": 900,
             "open": 14,
             "close": 24,
-            "category": "argentina",
-            "description": "informal, reconmendable para ir con niños",
+            "category": "Argentina",
+            "description": "Informal, reconmendable para ir con niños",
             "north": 20.673261,
             "west": -103.403393
         },
@@ -274,8 +274,8 @@
             "price": 570,
             "open": 13,
             "close": 1,
-            "category": "tacos",
-            "description": "comidas durante la madrugada",
+            "category": "Tacos",
+            "description": "Comidas durante la madrugada",
             "north": 20.673874,
             "west": -103.389102
         },
@@ -288,7 +288,7 @@
             "price": 360,
             "open": 13,
             "close": 24,
-            "category": "italiana",
+            "category": "Italiana",
             "description": "Especialidades de Italia en un lugar con decoraciones típicas y mesas de manteles a cuadros rojos y blancos",
             "north": 20.666555,
             "west": -103.390915
@@ -302,7 +302,7 @@
             "price": 30,
             "open": 13,
             "close": 21,
-            "category": "hamburguesas",
+            "category": "Hamburguesas",
             "description": "Agradable, informal, recomendable para ir con niños",
             "north": 20.676034,
             "west": -103.393246
@@ -316,8 +316,8 @@
             "price": 15,
             "open": 9,
             "close": 17,
-            "category": "mexicana",
-            "description": "informal",
+            "category": "Mexicana",
+            "description": "Informal",
             "north": 20.667960,
             "west": -103.394820
         },
@@ -330,7 +330,7 @@
             "price": 530,
             "open": 13,
             "close": 3,
-            "category": "mexicana",
+            "category": "Mexicana",
             "description": "Parrilla de decoración rústica y ambiente familiar especialista en antojitos mexicanos y carnes asadas.",
             "north": 20.676070,
             "west": -103.388811
@@ -344,8 +344,8 @@
             "price": 50,
             "open": 8,
             "close": 16,
-            "category": "tacos",
-            "description": "puesto sobre ruedas a un lado de infonavit",
+            "category": "Tacos",
+            "description": "Puesto sobre ruedas a un lado de infonavit",
             "north": 20.675159,
             "west": -103.393859
         },
@@ -358,8 +358,8 @@
             "price": 45,
             "open": 7,
             "close": 10,
-            "category": "ensaladas",
-            "description": "señorita que se pone a lado de starbucks",
+            "category": "Ensaladas",
+            "description": "Señorita que se pone a lado de starbucks",
             "north": 20.674736,
             "west": -103.392906
         }
