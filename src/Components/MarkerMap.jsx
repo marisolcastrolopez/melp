@@ -37,8 +37,9 @@ export class MapContainer extends Component {
   };
 
   render() {
-    console.log(this.props.data)
-    const marker = this.props.data.map(i => {
+    
+    const data = (Array.isArray(this.props.data))? this.props.data : this.props.data.restaurants;
+    const marker = data.map(i => {
       return (
         <Marker
           onClick={this.onMarkerClick}

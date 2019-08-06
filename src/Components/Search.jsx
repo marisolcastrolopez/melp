@@ -12,10 +12,11 @@ class Search extends Component {
  }
  handleChange = event => {
    
-  const found =  data.restaurants.filter(i =>
+  let found =  data.restaurants.filter(i =>
     new RegExp(this.state.search, "i").exec(JSON.stringify(i))
   );
 
+  
    this.setState({
      search: event.target.value,
      dataFiltered: found
@@ -24,7 +25,7 @@ class Search extends Component {
    this.props.eventSearch(found);
  };
  render() {
-   console.log(this.state.dataFiltered);
+   //console.log(this.state.dataFiltered);
    return (
      <div className="searchBar">
        <input

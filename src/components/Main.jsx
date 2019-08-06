@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import MarkerMap from "./MarkerMap";
 import Cards from './Cards';
 import Search from './Search';
+import data from "../data/data.json";
 
 class Main extends Component {
  constructor(props) {
@@ -10,7 +11,7 @@ class Main extends Component {
    this.switchToMap = this.switchToMap.bind(this);
    this.state = {
      isMap: false,
-    data: []
+    data: data
    };
  }
  switchToMap = () => {
@@ -22,11 +23,11 @@ class Main extends Component {
 };
 
 handlerSearch = (found) =>{
-  this.setState({ data:  found});
+  this.setState({ data:  (found.length)? found : data});
 }
 
  render() {
- //  console.log(this.state.data)
+ console.log(this.state.data)
    const isMap = this.state.isMap;
    let view;
    if (isMap){
