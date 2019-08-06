@@ -11,12 +11,17 @@ class Search extends Component {
    }
  }
  handleChange = event => {
+   
+  const found =  data.restaurants.filter(i =>
+    new RegExp(this.state.search, "i").exec(JSON.stringify(i))
+  );
+
    this.setState({
      search: event.target.value,
-     dataFiltered: data.restaurants.filter(i =>
-       new RegExp(this.state.search, "i").exec(JSON.stringify(i))
-     )
+     dataFiltered: found
    });
+
+   this.props.eventSearch(found);
  };
  render() {
    console.log(this.state.dataFiltered);
